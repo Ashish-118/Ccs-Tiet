@@ -24,13 +24,17 @@ const userSchema = new Schema({
         required: [true, "password is required"],
 
     },
-    mobile_no: {
+    mobileNum: {
         type: String,
     },
     isAdmin: {
         type: Boolean,
         default: false
     },
+    avatar: {
+        type: String,
+
+    }
 
 }, { timestamps: true })
 
